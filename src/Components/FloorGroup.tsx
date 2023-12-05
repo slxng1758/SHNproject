@@ -2,7 +2,7 @@ import { useState, MouseEvent, Fragment } from "react";
 
 function FloorGroup() {
   let floors = ["1st floor", "2nd floor", "3rd floor", "4th floor"];
-  let floorImages: { [key: string]: any } = {
+  let floorImages: { [key: string]: string } = {
     "1st floor":
       "https://images.pexels.com/photos/753873/pexels-photo-753873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=100&w=200",
     "2nd floor":
