@@ -7,7 +7,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-
+//function app
 function App() {
   return (
     <Router>
