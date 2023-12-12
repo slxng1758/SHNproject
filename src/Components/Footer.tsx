@@ -6,7 +6,7 @@ function Footer() {
     >
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          © 2023 North York General | 4001 Leslie St., Toronto, ON, M2K 1E1
+          © 2023 Scarborough Health Network
         </a>
         <button
           className="navbar-toggler"
