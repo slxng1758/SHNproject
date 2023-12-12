@@ -4,7 +4,7 @@ import Footer from "../Components/Footer";
 
 function Interview() {
   let message = "Welcome to North York General Hospital";
-  let interview = "here you can see the interviwes of our patients";
+  let interview = "Find answers to frequently asked questions by patients";
   return (
     <div>
       <div>

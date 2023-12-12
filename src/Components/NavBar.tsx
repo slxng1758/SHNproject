@@ -7,9 +7,9 @@ function NavBar() {
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           <img
-            width="130px"
-            height="70px"
-            src="https://www.nygh.on.ca/themes/custom/de_theme/logo.svg"
+            width="150px"
+            height="80px"
+            src="./src/assets/shnLogo.png"
           />
         </a>
         <button
@@ -31,8 +31,8 @@ function NavBar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="https://www.google.ca">
-                Google Link
+              <a className="nav-link" href="https://www.shn.ca/">
+                Official SHN Website
               </a>
             </li>
             <li className="nav-item dropdown">
@@ -70,7 +70,7 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/interview">
-                Patient Interviews
+                FAQ
               </a>
             </li>
           </ul>

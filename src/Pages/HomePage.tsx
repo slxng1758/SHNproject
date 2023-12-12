@@ -4,7 +4,7 @@ import LatestCarousel from "../Components/LatestCarousel";
 import Footer from "../Components/Footer";
 
 function Home() {
-  let message = "Welcome to North York General Hospital";
+  let message = "Scarborough Health Network";
   return (
     <div>
       <div>
