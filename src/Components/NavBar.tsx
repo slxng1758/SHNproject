@@ -2,7 +2,6 @@ function NavBar() {
   return (
     <nav
       className="navbar navbar-expand-lg navbar-light"
-      style={{ backgroundColor: "#e3f2fd" }}
     >
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
@@ -31,46 +30,18 @@ function NavBar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="https://www.shn.ca/">
-                Official SHN Website
-              </a>
-            </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Patient and Visitors
-              </a>
-              <ul className="dropdown-menu">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Contact Us
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Our Locations
-                  </a>
-                </li>
-
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Community Updates
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-item">
               <a className="nav-link" href="/floorPlan">
-                Map
+                Locations
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/interview">
+              <a className="nav-link" href="/FAQ">
                 FAQ
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="/">
+                Contact Us
               </a>
             </li>
           </ul>

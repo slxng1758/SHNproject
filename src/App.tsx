@@ -1,5 +1,5 @@
 import Home from "./Pages/HomePage";
-import Interview from "./Pages/Interview";
+import Interview from "./Pages/FAQ";
 import FloorMap from "./Pages/FloorMap";
 import {
   BrowserRouter as Router,

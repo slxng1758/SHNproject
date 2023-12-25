@@ -3,15 +3,13 @@ import TopNav from "../Components/TopNav";
 import NavBar from "../Components/NavBar";
 import LatestCarousel from "../Components/LatestCarousel";
 import Footer from "../Components/Footer";
-import Select from "../Components/Select";
 
-function Home() {
+function ContactUs() {
   return (
     <div>
       <div>
         <TopNav/>
         <NavBar />
-        <Select/>
         <LatestCarousel />
         <Footer />
       </div>
@@ -19,4 +17,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default ContactUs;

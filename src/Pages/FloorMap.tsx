@@ -1,4 +1,5 @@
 import Message from "../Components/Message";
+import TopNav from "../Components/TopNav";
 import NavBar from "../Components/NavBar";
 import FloorGroup from "../Components/FloorGroup";
 import Footer from "../Components/Footer";
@@ -9,6 +10,7 @@ function FloorMap() {
     <div>
       <div>
         <Message msg={message} />
+        <TopNav/>
         <NavBar />
         <FloorGroup />
         <Footer />
