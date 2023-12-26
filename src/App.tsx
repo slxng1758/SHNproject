@@ -1,6 +1,8 @@
 import Home from "./Pages/HomePage";
-import Interview from "./Pages/Interview";
+import Interview from "./Pages/FAQ";
 import FloorMap from "./Pages/FloorMap";
+import FAQ from "./Pages/FAQ";
+import ContactUs from "./Pages/ContactUs";
 import {
   BrowserRouter as Router,
   Routes,
@@ -17,6 +19,14 @@ function App() {
 
       <Routes>
         <Route path="/interview" element={<Interview />} />
+      </Routes>
+
+      <Routes>
+        <Route path="/FAQ" element={<FAQ />} />
+      </Routes>
+
+      <Routes>
+        <Route path="/ContactUs" element={<ContactUs />} />
       </Routes>
 
       <Routes>

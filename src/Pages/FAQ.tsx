@@ -1,21 +1,20 @@
 import Message from "../Components/Message";
 import TopNav from "../Components/TopNav";
 import NavBar from "../Components/NavBar";
-import FloorGroup from "../Components/FloorGroup";
+import LatestCarousel from "../Components/LatestCarousel";
 import Footer from "../Components/Footer";
 
-function FloorMap() {
+function FAQ() {
   return (
     <div>
       <div>
-        
         <TopNav/>
         <NavBar />
-        <FloorGroup />
+        <LatestCarousel />
         <Footer />
       </div>
     </div>
   );
 }
 
-export default FloorMap;
+export default FAQ;
