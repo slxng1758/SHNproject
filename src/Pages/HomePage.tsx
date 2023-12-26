@@ -4,6 +4,7 @@ import NavBar from "../Components/NavBar";
 import LatestCarousel from "../Components/LatestCarousel";
 import Footer from "../Components/Footer";
 import Select from "../Components/Select";
+import Reminder from "../Components/reminder";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
         <TopNav/>
         <NavBar />
         <Select/>
+        <Reminder/>
         <LatestCarousel />
         <Footer />
       </div>

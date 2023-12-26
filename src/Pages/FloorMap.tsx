@@ -5,11 +5,10 @@ import FloorGroup from "../Components/FloorGroup";
 import Footer from "../Components/Footer";
 
 function FloorMap() {
-  let message = "Welcome to North York General Hospital";
   return (
     <div>
       <div>
-        <Message msg={message} />
+        
         <TopNav/>
         <NavBar />
         <FloorGroup />
