@@ -3,12 +3,14 @@ import Interview from "./Pages/FAQ";
 import FloorMap from "./Pages/FloorMap";
 import FAQ from "./Pages/FAQ";
 import ContactUs from "./Pages/ContactUs";
+import Location from "./Pages/Location";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
 } from "react-router-dom";
+
 //function app
 function App() {
   return (
@@ -31,6 +33,10 @@ function App() {
 
       <Routes>
         <Route path="/floorPlan" element={<FloorMap />} />
+      </Routes>
+
+      <Routes>
+        <Route path="/Location" element={<Location />} />
       </Routes>
     </Router>
   );

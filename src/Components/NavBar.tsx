@@ -1,15 +1,9 @@
 function NavBar() {
   return (
-    <nav
-      className="navbar navbar-expand-lg navbar-light"
-    >
+    <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          <img
-            width="150px"
-            height="80px"
-            src="./src/assets/shnLogo.png"
-          />
+          <img width="150px" height="80px" src="./src/assets/shnLogo.png" />
         </a>
         <button
           className="navbar-toggler"
@@ -30,7 +24,7 @@ function NavBar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/floorPlan">
+              <a className="nav-link" href="/Location">
                 Locations
               </a>
             </li>

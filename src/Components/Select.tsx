@@ -1,6 +1,12 @@
 function Select() {
   return (
-    <div className="row m-5  border-5 border-bottom border-start border-info" style={{ backgroundColor: "#F0F0F0" }}>
+    <div
+      className="row m-5"
+      style={{
+        backgroundColor: "#F0F0F0",
+        boxShadow: "20px 20px 1px 1px #013F8A",
+      }}
+    >
       <h1>Select a hospital location to view a detailed layout</h1>
       <div className="col-sm-4">
         <div className="card-body ml-3">
