@@ -34,7 +34,7 @@ function NavBar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">
+              <a className="nav-link active" aria-current="page" href="/ContactUs">
                 Contact Us
               </a>
             </li>
