@@ -1,16 +1,20 @@
 import Message from "../Components/Message";
 import TopNav from "../Components/TopNav";
 import NavBar from "../Components/NavBar";
-import LatestCarousel from "../Components/LatestCarousel";
+import Reminder from "../Components/Reminder";
 import Footer from "../Components/Footer";
+import Faq from "../Components/Faq";
 
 function FAQ() {
   return (
     <div>
       <div>
-        <TopNav/>
+        <TopNav />
         <NavBar />
-        <LatestCarousel />
+        <Faq
+          question={"FAQ #1"}
+          answer={"Answer"}
+        />
         <Footer />
       </div>
     </div>
