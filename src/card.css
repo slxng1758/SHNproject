@@ -1,0 +1,17 @@
+.card_img {
+  transition: all 0.5s;
+}
+
+.card_img:hover .single-img {
+  opacity: 0.5;
+}
+
+.card_img:hover .card-title {
+  transform: scale(1.5);
+  color: black;
+}
+
+.card-title {
+  transition: all 0.5s;
+  color: transparent;
+}

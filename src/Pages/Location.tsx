@@ -11,32 +11,63 @@ function Location() {
         <TopNav />
         <NavBar />
         <Message msg={"What specific location are you looking for today?"} />
-        <div className="container">
+        <div className="container-lg border">
           <div className="row">
-            <div className="col-sm">
+            <div className="col-3 ">
               <Card
                 address={"Lobby"}
-                image={
-                  "https://images.pexels.com/photos/753873/pexels-photo-753873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=100&w=200"
-                }
+                image={"./src/assets/toronto (1).jpg"}
                 hospitalName={""}
               />
             </div>
-            <div className="col-sm">
+            <div className="col-3">
               <Card
                 address={"Check in"}
-                image={
-                  "https://images.pexels.com/photos/679277/pexels-photo-679277.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=100&w=200"
-                }
+                image={"./src/assets/toronto (2).jpg"}
                 hospitalName={""}
               />
             </div>
-            <div className="col-sm">
+            <div className="col-3">
               <Card
                 address={"Washroom"}
-                image={
-                  "https://images.pexels.com/photos/5486/bird-s-eye-view-cars-crossing-crossroad.jpg?auto=compress&cs=tinysrgb&dpr=2&h=100&w=200"
-                }
+                image={"./src/assets/toronto (3).jpg"}
+                hospitalName={""}
+              />
+            </div>
+            <div className="col-3">
+              <Card
+                address={"Doctor's Office"}
+                image={"./src/assets/toronto (4).jpg"}
+                hospitalName={""}
+              />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-3">
+              <Card
+                address={"Labs"}
+                image={"./src/assets/toronto (5).jpg"}
+                hospitalName={""}
+              />
+            </div>
+            <div className="col-3">
+              <Card
+                address={"Cafeteria"}
+                image={"./src/assets/toronto (6).jpg"}
+                hospitalName={""}
+              />
+            </div>
+            <div className="col-3">
+              <Card
+                address={"EMS Room"}
+                image={"./src/assets/toronto (7).jpg"}
+                hospitalName={""}
+              />
+            </div>
+            <div className="col-3">
+              <Card
+                address={"Bed Rooms"}
+                image={"./src/assets/toronto (8).jpg"}
                 hospitalName={""}
               />
             </div>
