@@ -30,7 +30,18 @@ function FloorGroup() {
   return (
     // Dynamically map data in a list
     <Fragment>
-      <ul className="list-group">
+      <ul className="list-group p-3 m-5" style={{ width: 400 }}>
+        <form className="d-flex" role="search">
+          <input
+            className="form-control me-2"
+            type="search"
+            placeholder="Search Location"
+            aria-label="Search"
+          />
+          <button className="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form>
         {floors.map((floor, index) => (
           // render content dinamically with a if condition
           <li
@@ -43,6 +54,7 @@ function FloorGroup() {
             onClick={() => {
               setSelectedIndex(index);
               setSelectedImage(floor);
+              //dropDownFloor(floor);
             }}
           >
             {floor}
@@ -60,12 +72,13 @@ function FloorGroup() {
           Another hard coded floor
         </li>
       </ul>
-
-      <img
-        // we render the image as a fragment, and we render this dynamically with states
-        src={floorImages[selectedImage]}
-        className="img-fluid"
-      ></img>
+      <div className="p-3 m-5 justify-content-end align-items-right">
+        <img
+          // we render the image as a fragment, and we render this dynamically with states
+          src={floorImages[selectedImage]}
+          className="img-fluid"
+        ></img>
+      </div>
     </Fragment>
   );
 }

@@ -73,6 +73,17 @@ function Location() {
             </div>
           </div>
         </div>
+        <div className="align-items-center align-content-center justify-content-center text-center">
+          <button
+            type="button"
+            className="btn btn-primary btn-lg "
+            style={{ backgroundColor: "#0078B6" }}
+          >
+            <a className="nav-link" href="/floorPlan">
+              View Map
+            </a>
+          </button>
+        </div>
         <Footer />
       </div>
     </div>
