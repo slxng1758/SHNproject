@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 interface Props {
   firstName: string;
   lastName: string;
@@ -6,56 +8,112 @@ interface Props {
 }
 
 function ContactInfo({ firstName, lastName, email, comment }: Props) {
+  const [fname, setFname] = useState("");
+  const [lname, setLname] = useState("");
+  const [Email, setEmail] = useState("");
+  const [Comment, setComment] = useState("");
+
+  const handleSubmit = (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+    const contact = { fname, lname, Email, Comment };
+    window.localStorage.setItem(fname, JSON.stringify(contact));
+    alert(`The name you entered was: ${window.localStorage.getItem(fname)}`);
+  };
+
   //we want to have this component represent a single card
   return (
-    <div className="container-sm">
-      <div className="row border">
-        <div className="col-6 border d-inline-flex justify-content-end ">
-          <div
-            className="card-body w-50 p-3 m-5 text-center me-1"
-            style={{ width: 400, backgroundColor: "#F0F0F0" }}
-          >
-            <p className="card-text">{firstName}</p>
+    <form onSubmit={handleSubmit}>
+      <div className="container-sm">
+        <div className="row">
+          <div className="col-6 border">
+            <div
+              className="card-body p-3 m-5 text-center ms-auto me-2"
+              style={{ width: 400, backgroundColor: "#F0F0F0" }}
+            >
+              <label htmlFor="exampleFormControlInput1" className="form-label">
+                First Name
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="Fname"
+                placeholder="John"
+                name="Fname"
+                value={fname}
+                onChange={(e) => setFname(e.target.value)}
+              ></input>
+            </div>
+          </div>
+          <div className="col-6 border">
+            <div
+              className="card-body p-3 m-5 text-center ms-2 me-auto"
+              style={{ width: 400, backgroundColor: "#F0F0F0" }}
+            >
+              <label htmlFor="exampleFormControlInput1" className="form-label">
+                Last Name
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="Lname"
+                placeholder="Dou"
+                name="Lname"
+                value={lname}
+                onChange={(e) => setLname(e.target.value)}
+              ></input>
+            </div>
           </div>
         </div>
-        <div className="col-6 border">
-          <div
-            className="card-body p-3 m-5 text-center ms-3"
-            style={{ width: 400, backgroundColor: "#F0F0F0" }}
-          >
-            <p className="card-text">{lastName}</p>
+        <div className="row">
+          <div className="col border">
+            <div
+              className="card-body p-3 m-5 text-center mx-auto"
+              style={{ width: 800, backgroundColor: "#F0F0F0" }}
+            >
+              <label htmlFor="exampleFormControlInput1" className="form-label">
+                Email
+              </label>
+              <input
+                type="email"
+                className="form-control"
+                id="email"
+                placeholder="example@gmail.com"
+                name="email"
+                value={Email}
+                onChange={(e) => setEmail(e.target.value)}
+              ></input>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="row border">
-        <div className="col ">
-          <div
-            className="card-body p-3 m-5 text-center mx-auto"
-            style={{ width: 800, backgroundColor: "#F0F0F0" }}
-          >
-            <p className="card-text">{email}</p>
+
+          <div className="col border">
+            <div
+              className="card-body p-3 m-5 text-center mx-auto"
+              style={{
+                width: 800,
+                backgroundColor: "#F0F0F0",
+                boxShadow: "20px 20px 1px 1px #013F8A",
+              }}
+            >
+              <label htmlFor="exampleFormControlInput1" className="form-label">
+                {comment}
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="comment"
+                placeholder="Tell us how we did!"
+                name="comment"
+                value={Comment}
+                onChange={(e) => setComment(e.target.value)}
+              ></input>
+            </div>
           </div>
         </div>
 
-        <div className="col">
-          <div
-            className="card-body p-3 m-5 text-center mx-auto"
-            style={{
-              width: 800,
-              backgroundColor: "#F0F0F0",
-              boxShadow: "20px 20px 1px 1px #013F8A",
-            }}
-          >
-            <p className="card-text">{comment}</p>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col"></div>
-        <div className="d-flex justify-content-center">
+        <div className="p-2 m-2 text-center mx-auto">
           <button
-            type="button"
-            className="btn btn-primary btn-lg"
+            type="submit"
+            className="p-2 m-2 btn btn-primary btn-lg"
             style={{
               backgroundColor: "#0078B6",
             }}
@@ -63,8 +121,9 @@ function ContactInfo({ firstName, lastName, email, comment }: Props) {
             <p>Submit</p>
           </button>
         </div>
+        <div id="responses"></div>
       </div>
-    </div>
+    </form>
   );
 }
 
