@@ -11,9 +11,14 @@ function FAQ() {
       <div>
         <TopNav />
         <NavBar />
+        <Reminder />
         <Faq
           question={"FAQ #1"}
           answer={"Answer"}
+        />
+        <Faq
+          question={"FAQ #2"}
+          answer={"Answer 2"}
         />
         <Footer />
       </div>

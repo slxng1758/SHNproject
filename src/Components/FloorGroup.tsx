@@ -28,58 +28,64 @@ function FloorGroup() {
     );
 
   return (
-    // Dynamically map data in a list
-    <Fragment>
-      <ul className="list-group p-3 m-5" style={{ width: 400 }}>
-        <form className="d-flex" role="search">
-          <input
-            className="form-control me-2"
-            type="search"
-            placeholder="Search Location"
-            aria-label="Search"
-          />
-          <button className="btn btn-outline-success" type="submit">
-            Search
-          </button>
-        </form>
-        {floors.map((floor, index) => (
-          // render content dinamically with a if condition
-          <li
-            className={
-              selectedIndex === index
-                ? "list-group-item active"
-                : "list-group-item"
-            }
-            key={floor}
-            onClick={() => {
-              setSelectedIndex(index);
-              setSelectedImage(floor);
-              //dropDownFloor(floor);
-            }}
-          >
-            {floor}
-          </li>
-        ))}
-
-        <li
-          // how to do a basic onClick event with a shorthand function
-          className="list-group-item"
-          onClick={() => console.log("we are clicking hard coded floor!")}
+    <div className="container-sm">
+      <div className="row border d-flex">
+        <ul
+          className="list-group p-3 m-5 me-auto col-6 border"
+          style={{ width: 400 }}
         >
-          Hard coded floor
-        </li>
-        <li className="list-group-item" onClick={handleClick}>
-          Another hard coded floor
-        </li>
-      </ul>
-      <div className="p-3 m-5 justify-content-end align-items-right">
-        <img
-          // we render the image as a fragment, and we render this dynamically with states
-          src={floorImages[selectedImage]}
-          className="img-fluid"
-        ></img>
+          <form className="d-flex" role="search">
+            <input
+              className="form-control me-2"
+              type="search"
+              placeholder="Search Location"
+              aria-label="Search"
+            />
+            <button className="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+
+          {floors.map((floor, index) => (
+            // render content dinamically with a if condition
+            <li
+              className={
+                selectedIndex === index
+                  ? "list-group-item active"
+                  : "list-group-item"
+              }
+              key={floor}
+              onClick={() => {
+                setSelectedIndex(index);
+                setSelectedImage(floor);
+                //dropDownFloor(floor);
+              }}
+            >
+              {floor}
+            </li>
+          ))}
+
+          <li
+            // how to do a basic onClick event with a shorthand function
+            className="list-group-item"
+            onClick={() => console.log("we are clicking hard coded floor!")}
+          >
+            Hard coded floor
+          </li>
+          <li className="list-group-item" onClick={handleClick}>
+            Another hard coded floor
+          </li>
+        </ul>
+        <div className="col-7 border d-flex">
+          <img
+            // we render the image as a fragment, and we render this dynamically with states
+            src={floorImages[selectedImage]}
+            className="d-block img-fluid w-100 text-center"
+          ></img>
+        </div>
       </div>
-    </Fragment>
+      
+    </div>
   );
 }
 

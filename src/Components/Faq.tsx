@@ -7,10 +7,7 @@ interface Props {
 
 function Faq({ question, answer }: Props) {
   return (
-    <div className="card-body">
-      <div className="card-body ml-2">
-        <Reminder />
-      </div>
+    
       <div className="card-body ml-2">
         <div
           className="card-body p-3 m-5 text-center"
@@ -30,7 +27,7 @@ function Faq({ question, answer }: Props) {
           <p className="card-text">{answer}</p>
         </div>
       </div>
-    </div>
+
   );
 }
 

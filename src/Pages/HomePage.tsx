@@ -4,6 +4,7 @@ import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 import Reminder from "../Components/Reminder";
 import Card from "../Components/Card";
+import Updates from "../Components/Updates";
 
 function Home() {
   return (
@@ -44,7 +45,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <Reminder />
+      <Updates/>
       <Footer />
     </div>
   );
