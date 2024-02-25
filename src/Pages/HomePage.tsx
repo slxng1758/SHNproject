@@ -1,10 +1,10 @@
-import Message from "../Components/Message";
-import TopNav from "../Components/TopNav";
-import NavBar from "../Components/NavBar";
-import Footer from "../Components/Footer";
-import Reminder from "../Components/Reminder";
-import Card from "../Components/Card";
-import Updates from "../Components/Updates";
+import Message from "../app/Components/Message";
+import TopNav from "../app/Components/TopNav";
+import NavBar from "../app/Components/NavBar";
+import Footer from "../app/Components/Footer";
+import Reminder from "../app/Components/Reminder";
+import Card from "../app/Components/Card";
+import Updates from "../app/Components/Updates";
 
 function Home() {
   return (
@@ -45,7 +45,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <Updates/>
+      <Updates />
       <Footer />
     </div>
   );

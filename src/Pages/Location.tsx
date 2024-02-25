@@ -1,8 +1,8 @@
-import Message from "../Components/Message";
-import TopNav from "../Components/TopNav";
-import NavBar from "../Components/NavBar";
-import Footer from "../Components/Footer";
-import Card from "../Components/Card";
+import Message from "../app/Components/Message";
+import TopNav from "../app/Components/TopNav";
+import NavBar from "../app/Components/NavBar";
+import Footer from "../app/Components/Footer";
+import Card from "../app/Components/Card";
 
 function Location() {
   return (

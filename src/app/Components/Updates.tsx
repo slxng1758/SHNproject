@@ -1,6 +1,18 @@
+import { useEffect, useState } from "react";
 import Reminder from "./Reminder";
 
 function Updates() {
+  //hook to retrive data from scrapper
+  const [data, setData] = useState<any[]>([]);
+
+  //fetch data
+  useEffect(() => {
+    fetch("http://localhost:4000/scrapeNews")
+      .then((response) => response.json())
+      .then((json) => setData(json))
+      .catch((error) => console.error(error));
+  }, []);
+
   return (
     <div className="container-sm">
       <div className="row border d-flex">
@@ -40,6 +52,16 @@ function Updates() {
             </button>
           </div>
         </div>
+      </div>
+      <div>
+        {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : "Loading..."}
+      </div>
+      <div>
+        {data.map((news) => (
+          <div key={news.title}>
+            <p>{news.title}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

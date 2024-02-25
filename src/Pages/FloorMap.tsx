@@ -1,10 +1,10 @@
-import Message from "../Components/Message";
-import TopNav from "../Components/TopNav";
-import NavBar from "../Components/NavBar";
-import FloorGroup from "../Components/FloorGroup";
-import FloorMenu from "../Components/FloorMenu";
-import Footer from "../Components/Footer";
-import LatestCarousel from "../Components/LatestCarousel";
+import Message from "../app/Components/Message";
+import TopNav from "../app/Components/TopNav";
+import NavBar from "../app/Components/NavBar";
+import FloorGroup from "../app/Components/FloorGroup";
+import FloorMenu from "../app/Components/FloorMenu";
+import Footer from "../app/Components/Footer";
+import LatestCarousel from "../app/Components/LatestCarousel";
 
 function FloorMap() {
   return (
@@ -13,7 +13,7 @@ function FloorMap() {
         <TopNav />
         <NavBar />
         <FloorGroup />
-        <FloorMenu/>
+        <FloorMenu />
         <LatestCarousel />
         <Footer />
       </div>

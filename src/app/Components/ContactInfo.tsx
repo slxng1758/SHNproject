@@ -28,7 +28,7 @@ function ContactInfo({ firstName, lastName, email, comment }: Props) {
           <div className="col-6 border">
             <div
               className="card-body p-3 m-5 text-center ms-auto me-2"
-              style={{ width: 400, backgroundColor: "#F0F0F0" }}
+              style={{ width: 300, backgroundColor: "#F0F0F0" }}
             >
               <label htmlFor="exampleFormControlInput1" className="form-label">
                 First Name
@@ -47,7 +47,7 @@ function ContactInfo({ firstName, lastName, email, comment }: Props) {
           <div className="col-6 border">
             <div
               className="card-body p-3 m-5 text-center ms-2 me-auto"
-              style={{ width: 400, backgroundColor: "#F0F0F0" }}
+              style={{ width: 300, backgroundColor: "#F0F0F0" }}
             >
               <label htmlFor="exampleFormControlInput1" className="form-label">
                 Last Name
@@ -89,7 +89,7 @@ function ContactInfo({ firstName, lastName, email, comment }: Props) {
             <div
               className="card-body p-3 m-5 text-center mx-auto"
               style={{
-                width: 800,
+                width: 600,
                 backgroundColor: "#F0F0F0",
                 boxShadow: "20px 20px 1px 1px #013F8A",
               }}

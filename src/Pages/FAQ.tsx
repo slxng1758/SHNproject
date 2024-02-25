@@ -1,9 +1,9 @@
-import Message from "../Components/Message";
-import TopNav from "../Components/TopNav";
-import NavBar from "../Components/NavBar";
-import Reminder from "../Components/Reminder";
-import Footer from "../Components/Footer";
-import Faq from "../Components/Faq";
+import Message from "../app/Components/Message";
+import TopNav from "../app/Components/TopNav";
+import NavBar from "../app/Components/NavBar";
+import Reminder from "../app/Components/Reminder";
+import Footer from "../app/Components/Footer";
+import Faq from "../app/Components/Faq";
 
 function FAQ() {
   return (
@@ -12,14 +12,8 @@ function FAQ() {
         <TopNav />
         <NavBar />
         <Reminder />
-        <Faq
-          question={"FAQ #1"}
-          answer={"Answer"}
-        />
-        <Faq
-          question={"FAQ #2"}
-          answer={"Answer 2"}
-        />
+        <Faq question={"FAQ #1"} answer={"Answer"} />
+        <Faq question={"FAQ #2"} answer={"Answer 2"} />
         <Footer />
       </div>
     </div>

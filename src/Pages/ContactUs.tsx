@@ -1,26 +1,37 @@
-import Message from "../Components/Message";
-import TopNav from "../Components/TopNav";
-import NavBar from "../Components/NavBar";
-import LatestCarousel from "../Components/LatestCarousel";
-import Footer from "../Components/Footer";
-import ContactInfo from "../Components/ContactInfo";
-import Reminder from "../Components/Reminder";
+import Message from "../app/Components/Message";
+import TopNav from "../app/Components/TopNav";
+import NavBar from "../app/Components/NavBar";
+import LatestCarousel from "../app/Components/LatestCarousel";
+import Footer from "../app/Components/Footer";
+import ContactInfo from "../app/Components/ContactInfo";
+import Reminder from "../app/Components/Reminder";
 
 function ContactUs() {
   return (
     <div>
-      <div>
-        <TopNav/>
-        <NavBar />
-        <Reminder/>
-        <ContactInfo
-        firstName = {"First Name"}
-        lastName = {"Last Name"}
-        email = {"Enter your email"}
-        comment = {"Enter a comment, suggestion, or question"}
-        />
-        <Footer />
+      <TopNav />
+      <NavBar />
+      <div className="Container w-75">
+        <div className="row">
+          <div className="col-4">
+            <Reminder />
+          </div>
+          <div className="col-8">
+            <Message
+              msg={
+                "Feel free to leave a suggestion in the box below. This website is not to provide answers to medical questions nor is affiliated with SHN."
+              }
+            ></Message>
+            <ContactInfo
+              firstName={"First Name"}
+              lastName={"Last Name"}
+              email={"Enter your email"}
+              comment={"Enter a comment, suggestion, or question"}
+            />
+          </div>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 }

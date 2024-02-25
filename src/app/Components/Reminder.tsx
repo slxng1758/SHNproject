@@ -3,31 +3,33 @@ function Reminder() {
     <div>
       <div
         className="card-body p-3 m-5 text-center"
-        style={{ width: 400, backgroundColor: "#F0F0F0" }}
+        style={{ width: 250, backgroundColor: "#F0F0F0" }}
       >
         <p className="card-text">
           For specific medicial information and latest updates visit the
         </p>
-        <button
-          type="button"
-          className="btn btn-primary btn-lg "
+        <a
+          role="button"
+          href="https://www.shn.ca/"
+          className="btn btn-primary btn-lg"
           style={{ backgroundColor: "#0078B6" }}
         >
           Official SHN Website
-        </button>
+        </a>
       </div>
       <div
         className="card-body p-3 m-5 text-center"
-        style={{ width: 400, backgroundColor: "#CDDEF2" }}
+        style={{ width: 250, backgroundColor: "#CDDEF2" }}
       >
         <p className="card-text">website blurb</p>
-        <button
-          type="button"
+        <a
+          role="button"
+          href="https://shnfoundation.akaraisin.com/ui/DonateNow/donations/start"
           className="btn btn-primary btn-lg "
           style={{ backgroundColor: "#0078B6" }}
         >
           Donate Today
-        </button>
+        </a>
       </div>
     </div>
   );

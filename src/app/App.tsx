@@ -1,9 +1,9 @@
-import Home from "./Pages/HomePage";
-import Interview from "./Pages/FAQ";
-import FloorMap from "./Pages/FloorMap";
-import FAQ from "./Pages/FAQ";
-import ContactUs from "./Pages/ContactUs";
-import Location from "./Pages/Location";
+import Home from "../Pages/HomePage";
+import Interview from "../Pages/FAQ";
+import FloorMap from "../Pages/FloorMap";
+import FAQ from "../Pages/FAQ";
+import ContactUs from "../Pages/ContactUs";
+import Location from "../Pages/Location";
 import {
   BrowserRouter as Router,
   Routes,
