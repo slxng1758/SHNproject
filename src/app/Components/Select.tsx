@@ -5,9 +5,11 @@ function Select() {
       style={{
         backgroundColor: "#F0F0F0",
         boxShadow: "20px 20px 1px 1px #013F8A",
+        borderRadius: 10,
+        borderColor: "black",
       }}
     >
-      <h1>Select a hospital location to view a detailed layout</h1>
+      <h1>Select a location to view a detailed layout</h1>
       <div className="col-sm-4">
         <div className="card-body ml-3">
           <img
